@@ -1,16 +1,16 @@
 <?php
 #登入管理者的權限列出
-$amCompSql = "select AM_ID,AM_Competence,AM_Level from Admin_Manager where AM_ID = '".$_SESSION['AM_ID']."'";
-$amCompRs = $Language_db->query($amCompSql);
-$amCompData = $amCompRs->fetch();
-$amCompStr = $amCompData['AM_Competence']; //將管理者的權限先呼叫出來，英文
-$amLevel = $amCompData['AM_Level']; //管理者等級
+$amCompSql   = "select AM_ID,AM_Competence,AM_Level from Admin_Manager where AM_ID = '".$_SESSION['AM_ID']."'";
+$amCompRs    = $_db->query($amCompSql);
+$amCompData  = $amCompRs->fetch();
+$amCompStr   = $amCompData['AM_Competence']; //將管理者的權限先呼叫出來，英文
+$amLevel     = $amCompData['AM_Level']; //管理者等級
 #將權限陣列(英文)，轉成主類別陣列(數字id)
 $amCompArray = explode(",",$amCompStr); //分割將字串轉為陣列，以標點符號為分割點
 
 foreach($amCompArray as $key=>$val) {
-  $mIDSql = "select AMC_ID,AMC_EnName,AMC_MainClass from Admin_ManagerCompetence where AMC_EnName = '$val'";
-  $mIDRs = $Config_db->query($mIDSql);
+  $mIDSql  = "select AMC_ID,AMC_EnName,AMC_MainClass from Admin_ManagerCompetence where AMC_EnName = '$val'";
+  $mIDRs   = $_db->query($mIDSql);
   $mIDData = $mIDRs->fetch(); 
   
   if($amLevel == '2' && ($mIDData['AMC_MainClass'] == '1' || $mIDData['AMC_MainClass'] == '6')) { //一般管理者部份功能看不到的過濾，系統管理、數據分析
@@ -23,24 +23,24 @@ foreach($amCompArray as $key=>$val) {
 }
 
 #計算前端當日參觀人數
-$toDay =  date("Y-m-d"); //當天日期
-$sqlTodayAmount = "SELECT * FROM Record_ClickPage WHERE RCP_AddDate = '".$toDay ."' GROUP BY RCP_Ip";
-$rsTodayAmount = $Config_db -> query($sqlTodayAmount);
+$toDay           =  date("Y-m-d"); //當天日期
+$sqlTodayAmount  = "SELECT * FROM Record_ClickPage WHERE RCP_AddDate = '".$toDay ."' GROUP BY RCP_Ip";
+$rsTodayAmount   = $_db -> query($sqlTodayAmount);
 $dataTodayAmount = $rsTodayAmount -> fetchAll();
 
 #計算累積參觀人數
-$sqlTotalAmount = "SELECT * FROM Record_ClickPage GROUP BY RCP_Ip";
-$rsTotalAmount = $Config_db -> query($sqlTotalAmount);
+$sqlTotalAmount  = "SELECT * FROM Record_ClickPage GROUP BY RCP_Ip";
+$rsTotalAmount   = $_db -> query($sqlTotalAmount);
 $dataTotalAmount = $rsTotalAmount -> fetchAll();
 
-$mIDcheckArray = array_unique($mIDarray); //將有重覆的value值刪除，在不考慮key值的情況下刪除，適用於陣列
+$mIDcheckArray   = array_unique($mIDarray); //將有重覆的value值刪除，在不考慮key值的情況下刪除，適用於陣列
 //$mIDcheckArray = $mIDarray;
 
 #ul的style設定
 //找出正在看的功能母類別id
-$sqlMainMenu = "select * from Admin_ManagerCompetence where AMC_EnName = '".$_GET['pageData']."'";
-$rsMainMenu = $Config_db -> query($sqlMainMenu);
-$dataMainMenu = $rsMainMenu -> fetch();
+$sqlMainMenu     = "select * from Admin_ManagerCompetence where AMC_EnName = '".$_GET['pageData']."'";
+$rsMainMenu      = $_db -> query($sqlMainMenu);
+$dataMainMenu    = $rsMainMenu -> fetch();
 
 if($dataMainMenu && $dataMainMenu['AMC_MainClass']!= 0) { //用子類別找出主類別id
   $mainID = $dataMainMenu['AMC_MainClass']; //主類別ID
@@ -48,7 +48,7 @@ if($dataMainMenu && $dataMainMenu['AMC_MainClass']!= 0) { //用子類別找出�
 
 #menu選單列出
 $mMenuSql = "select * from Admin_ManagerCompetence where AMC_Level = '1' order by AMC_ID ASC";
-$mMenuRs = $Config_db->query($mMenuSql);
+$mMenuRs  = $_db->query($mMenuSql);
 ?>
 <section id="asideWarp">
   <header id="logoWarp" class="boxWarp">
@@ -83,7 +83,7 @@ $mMenuRs = $Config_db->query($mMenuSql);
           <ul class="listMenu" style="<?php if($mMenuData['AMC_ID'] == $mainID) { echo "display:block"; } else { echo "display:none"; } ?>">
             <?php
             $subMenuSql = "select * from Admin_ManagerCompetence where AMC_Level = '2' AND AMC_MainClass = '$mMenuData[AMC_ID]' order by AMC_ID ASC";
-            $subMenuRs = $Config_db->query($subMenuSql);
+            $subMenuRs = $_db->query($subMenuSql);
             while($subMenuData = $subMenuRs->fetch()) {
               //if(strpos($amCompStr, $subMenuData['AMC_EnName'])) { //比對次類別字串，是否帳號中有一樣的權限，比對字串
               if(preg_match("/\b".$subMenuData['AMC_EnName']."\b/i", $amCompStr)) { //比對次類別字串，是否帳號中有一樣的權限，比對字串
