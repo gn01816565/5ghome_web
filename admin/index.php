@@ -10,14 +10,18 @@
       <div id="topLineWarp" class="red">
         <div class="btnWarp">
           <ul>
-            <li><a href='./forget_pw.php' class="green" title="忘記密碼">忘記密碼</a></li>
-            <li><a href="../tc" class="red" title="連結官網">連結官網</a></li>
+            <li><a href='forget_pw.php' class="green" title="忘記密碼">忘記密碼</a></li>
+            <li><a href="../index.php" class="red" title="連結官網">連結官網</a></li>
           </ul>
         </div>
       </div>
       <form id="sentCheck" method="post" action="check.php">
       <header id="loginWarp">
-        <div class="logo"><img src ="../images/logo.svg" alt="logo"></div>
+        <div class="logo">
+          <!--
+          <img src ="../images/logo.svg" alt="logo">
+          -->
+        </div>
         <div class="txt">後台管理系統</div>
         <div class="formWarp">
           <div class="formBox">
@@ -38,9 +42,11 @@
         </div>
       </header>
     </form>
+    <!--
       <footer id="footerWarp" class="login">
         <h2>Copyright © 2015 FIVE STARS. All Rights Reserved.</h2>
       </footer>
+    -->
     </div>
   </body>
 </html>

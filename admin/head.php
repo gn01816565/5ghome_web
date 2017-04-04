@@ -1,14 +1,17 @@
 <meta charset="UTF-8">
-<meta name="keywords" content="FIVE STARS - 後端管理系統">
-<meta name="description" content="FIVE STARS - 後端管理系統">
+<meta name="keywords" content="5GHOME - 後端管理系統">
+<meta name="description" content="5GHOME - 後端管理系統">
 <meta name="viewport" content="width=1000">
 <!--RWD
 <meta name="viewport" content="initial-scale=1,user-scalable=no, maximum-scale=1, width=device-width">
 <meta name="viewport" content="initial-scale=1, user-scalable=no, maximum-scale=1">
 -->
-<title>FIVE STARS - 後台管理系統</title>
+<title>5GHOME - 後台管理系統</title>
 <!--.icon-->
+<!--
+先註解，有圖後再放上去
 <link href="../favorite_icon/favorite.ico" rel="shortcut icon" type="image/x-icon">
+-->
 <!--CSS-->
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/admin.css">
