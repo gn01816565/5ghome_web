@@ -137,7 +137,8 @@ display:inline-block;
 	float:left;	
 }
  .top-nav {
-  width: 42%;
+  /*width: 42%;*/
+  width:650px;
   display: block;
   float: left;
 }
@@ -148,7 +149,7 @@ display:inline-block;
 .banner1{
 	background:url(../images/bnr.jpg) no-repeat 0px 0px;
 	background-size:cover;
-  min-height:386px;
+    min-height:386px;
 	/*min-height:585px;*/
 }
 .banner2{
