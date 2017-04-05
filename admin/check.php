@@ -37,7 +37,7 @@ if (isset($ac) && isset($pw)) {
   $sqlAC = "SELECT AM_ID,AM_Account,AM_Password FROM Admin_Manager WHERE AM_Account = :AM_Account AND AM_Status = 'Y'";
   
   
-  $loginAC = $Language_db->prepare($sqlAC, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+  $loginAC = $_db->prepare($sqlAC, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
   $loginAC->bindParam(":AM_Account", $ac); //防first order sql injection
   $loginAC->execute();
   
