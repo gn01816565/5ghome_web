@@ -110,13 +110,12 @@
         <li class="grid"><a href="?pageData=epaper">型錄/電子報</a></li>
         <li class="grid"><a href="?pageData=order_help">訂購說明</a></li>
         <li class="grid"><a href="?pageData=ask">產品詢問</a></li>
-        <!--<li class="grid"><a href="typo.html">產品詢問</a></li>-->
         <li class="grid"><a href="?pageData=about">關於我們</a></li>
       </ul>   
       <div class="clearfix"> </div>
     </div>
     <!---->
-    <div class="cart box_1">
+    <div class="cart box_1" style="margin-right:20px;">
       <img src="images/Taiwan.png" style="width:24px;float:left;">
       <img src="images/gb.png" style="width:24px;float:left;">
       <img src="images/jp.png" style="width:24px;float:left;">
@@ -128,7 +127,12 @@
         <li class="dropdown">
           <a style="padding-top:5px;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">測試人員<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">紅利點數(1)</a></li>
+            <li><a href="?pageData=member_info">會員中心</a></li>
+            <li><a href="?pageData=member_order_list">訂單管理</a></li>
+            <li><a href="?pageData=member_repair_search">退換貨管理</a></li>
+            <li><a href="?pageData=member_repairstep_search">維修管理</a></li>
+            <li><a href="?pageData=member_qa">問答紀錄管理</a></li>
+            <li><a href="?pageData=member_myredeem">紅利點數(1)</a></li>
             <!--
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
