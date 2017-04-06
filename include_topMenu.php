@@ -116,7 +116,7 @@
       <div class="clearfix"> </div>
     </div>
     <!---->
-    <div class="cart box_1" style="margin-right:20px;">
+    <div class="cart box_1">
       <img src="images/Taiwan.png" style="width:24px;float:left;">
       <img src="images/gb.png" style="width:24px;float:left;">
       <img src="images/jp.png" style="width:24px;float:left;">
