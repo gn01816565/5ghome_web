@@ -94,6 +94,88 @@ switch($pageData) {
     include('authenticate.php');  
     break;
 
+  //會員中心 - 登入首頁
+  case 'member_info':
+    include('view/member/info.php');  
+    break;
+  //紅利積點詳細使用說明  
+  case 'member_redeem_rule': 
+    include('view/member/redeem_rule.php');  
+    break;
+  //紅利積點使用說明  
+  case 'member_redeem': 
+    include('view/member/redeem.php');  
+    break;
+  //紅利稅換紀錄      
+  case 'member_myredeem_record':
+    include('view/member/myredeem_record.php');  
+    break;
+  //紅利查詢
+  case 'member_myredeem':
+    include('view/member/myredeem.php');  
+    break;  
+  //登入頁      
+  case 'member_login':
+    include('view/member/login.php');  
+    break;  
+  //忘記密碼      
+  case 'member_forget':
+    include('view/member/forget.php');  
+    break;
+  //加入會員條款說明  
+  case 'member_join_remarks':
+    include('view/member/join_remarks.php');  
+    break;
+  //個人會員加入頁  
+  case 'member_register_personal':
+    include('view/member/register_personal.php');  
+    break;     
+  //企業會員加入頁  
+  case 'member_register_company':
+    include('view/member/register_company.php');  
+    break;
+  //會員資料修改  
+  case 'member_account_modify':
+    include('view/member/account_modify.php');  
+    break;      
+  //密碼修改  
+  case 'member_pw_modify':
+    include('view/member/pw_modify.php');  
+    break;
+  //訂單詢問  
+  case 'member_order_qa':
+    include('view/member/order_qa.php');  
+    break; 
+  //訂單列表  
+  case 'member_order_list':
+    include('view/member/order_list.php');  
+    break;
+  //訂單內容 
+  case 'member_order_content':
+    include('view/member/order_content.php');  
+    break;        
+  //填寫維修單
+  case 'member_repairstep_add':
+    include('view/member/repairstep_add.php');  
+    break;
+  //維修查詢
+  case 'member_repairstep_search':
+    include('view/member/repairstep_search.php');  
+    break; 
+  //填寫退換貨
+  case 'member_repair_add':
+    include('view/member/repair_search.php');  
+    break;  
+  //退換貨查詢
+  case 'member_repair_search':
+    include('view/member/repair_search.php');  
+    break;
+  //問答紀錄
+  case 'member_qa':
+    include('view/member/qa.php');  
+    break;  
+
+
   default: //首頁 
     include('index_info.php');
     break;  
