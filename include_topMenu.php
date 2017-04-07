@@ -129,9 +129,9 @@
           <ul class="dropdown-menu">
             <li><a href="?pageData=member_info">會員中心</a></li>
             <li><a href="?pageData=member_order_list">訂單管理</a></li>
-            <li><a href="?pageData=member_repair_search">退換貨管理</a></li>
-            <li><a href="?pageData=member_repairstep_search">維修管理</a></li>
-            <li><a href="?pageData=member_qa">問答紀錄管理</a></li>
+            <li><a href="?pageData=member_repair_list">退換貨管理</a></li>
+            <li><a href="?pageData=member_repairstep_list">維修管理</a></li>
+            <li><a href="?pageData=member_qa_list">問答紀錄管理</a></li>
             <li><a href="?pageData=member_myredeem">紅利點數(1)</a></li>
             <!--
             <li><a href="#">Another action</a></li>
