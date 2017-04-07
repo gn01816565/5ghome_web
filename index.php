@@ -143,37 +143,45 @@ switch($pageData) {
     include('view/member/pw_modify.php');  
     break;
   //訂單詢問  
-  case 'member_order_qa':
-    include('view/member/order_qa.php');  
+  case 'member_order_ask':
+    include('view/member/order_ask.php');  
     break; 
-  //訂單列表  
+  //訂單查詢 - 列表
   case 'member_order_list':
     include('view/member/order_list.php');  
     break;
   //訂單內容 
-  case 'member_order_content':
-    include('view/member/order_content.php');  
+  case 'member_order_detail':
+    include('view/member/order_detail.php');  
     break;        
   //填寫維修單
   case 'member_repairstep_add':
     include('view/member/repairstep_add.php');  
     break;
-  //維修查詢
-  case 'member_repairstep_search':
-    include('view/member/repairstep_search.php');  
-    break; 
+  //維修查詢 - 列表
+  case 'member_repairstep_list':
+    include('view/member/repairstep_list.php');  
+    break;
+  //維修單 - 內文
+  case 'member_repairstep_detail':
+    include('view/member/repairstep_detail.php');  
+    break;  
   //填寫退換貨
   case 'member_repair_add':
     include('view/member/repair_search.php');  
     break;  
-  //退換貨查詢
-  case 'member_repair_search':
-    include('view/member/repair_search.php');  
+  //退換貨查詢 - 列表
+  case 'member_repair_list':
+    include('view/member/repair_list.php');  
     break;
-  //問答紀錄
-  case 'member_qa':
-    include('view/member/qa.php');  
-    break;    
+  //問答紀錄 - 列表
+  case 'member_qa_list':
+    include('view/member/qa_list.php');  
+    break; 
+  //問答紀錄 - 內文
+  case 'member_qa_detail':
+    include('view/member/qa_detail.php');  
+    break;      
 
   default: //首頁 
     include('index_info.php');
