@@ -23,6 +23,7 @@
        <div class="col-md-3 ftr-grid">
           <h3>資訊</h3>
           <ul class="nav-bottom">
+            <li><a href="?pageData=registerChoose">註冊會員</a></li>
             <li><a href="?pageData=login">會員登入</a></li>
             <li><a href="?pageData=ask">聯絡我們</a></li>
             <li><a href="#">FAQ</a></li>

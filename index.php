@@ -94,9 +94,25 @@ switch($pageData) {
     include('authenticate.php');  
     break;
 
+  //註冊會員 - 說明宣告
+  case 'registerChoose':
+    include('view/member/register_choose.php');  
+    break;
+  //註冊會員 - 帳號密碼輸入
+  case 'registerMember_1':
+    include('view/member/register_general_step1.php');  
+    break;
+  //註冊會員 - 一般會員/個資輸入
+  case 'registerMember_2':
+    include('view/member/register_general_step2.php');  
+    break;    
+  //註冊會員 - 企業會員/個資輸入
+  case 'registerCompany_1':
+    include('view/member/register_company_step1.php');  
+    break;  
    //會員中心 - 登入首頁
   case 'member_info':
-    include('view/member/info.php');  
+    include('view/member/info.php'); 
     break;
   //紅利積點詳細使用說明  
   case 'member_redeem_rule': 

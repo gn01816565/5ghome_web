@@ -31,9 +31,11 @@
 						    <p class="pric1"><del>NTD 70</del></p>
 				        <p class="disc">[5% Off]</p>
 						  </div>
-						  <input type="text" class="item_quantity" value="1" />
-						  <input type="button" class="item_add items" value="ADD">
-						  <div class="clearfix"> </div>
+						  <!--
+              <input type="text" class="item_quantity" value="1" />
+              <input type="button" class="item_add items" value="ADD">
+              <div class="clearfix"> </div>
+              -->
 					  </div>												
 				  </div>
 			  </div>	
@@ -63,9 +65,11 @@
                 <p class="pric1"><del>NTD 80</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -95,9 +99,11 @@
                 <p class="pric1"><del>NTD 201</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -127,9 +133,11 @@
                 <p class="pric1"><del>NTD 70</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -159,9 +167,11 @@
                 <p class="pric1"><del>NTD 80</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -191,9 +201,11 @@
                 <p class="pric1"><del>NTD 201</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -223,9 +235,11 @@
                 <p class="pric1"><del>NTD 70</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -255,9 +269,11 @@
                 <p class="pric1"><del>NTD 80</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -287,9 +303,11 @@
                 <p class="pric1"><del>NTD 201</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -319,9 +337,11 @@
                 <p class="pric1"><del>NTD 70</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -351,9 +371,11 @@
                 <p class="pric1"><del>NTD 80</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
@@ -383,9 +405,11 @@
                 <p class="pric1"><del>NTD 201</del></p>
                 <p class="disc">[5% Off]</p>
               </div>
+              <!--
               <input type="text" class="item_quantity" value="1" />
               <input type="button" class="item_add items" value="ADD">
               <div class="clearfix"> </div>
+              -->
             </div>                        
           </div>
         </div>  
